@@ -370,6 +370,10 @@ $text-color: #222222;
       margin: 0 11px 0 0;
     }
     
+    .products-link-btn {
+      text-decoration: none;
+    }
+
     .products-btn {
       display: block;
       max-width: 212px;
@@ -395,7 +399,6 @@ $text-color: #222222;
       background-color: #fff;
       color: #ff6a6a;
     }
-
 }
 
 .features {
@@ -533,6 +536,46 @@ $text-color: #222222;
         }
     }    
 }   
+
+
+// ==========================catalog============================
+
+
+
+.catalog-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $site-color;
+  height: 148px;
+  text-transform: uppercase;
+
+  .navi-link {
+    width: 194px;
+    font-size: 24px;
+    line-height: 29px;
+    margin-right: 737px;
+    text-decoration: none;
+  }
+
+  .navi-link-bmenu {
+    width: 209px;
+    font-size: 14px;
+    line-height: 17px; 
+    text-decoration: none; 
+  }
+}
+
+.filter {
+  height: 132px;
+}
+
+
+
+
+
+
 
 
 
