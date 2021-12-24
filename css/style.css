@@ -960,6 +960,12 @@
   list-style-type: none;
 }
 
+.breadcrumb li + li::before {
+  padding: 2px;
+  color: #636363;
+  content: "/\00a0";
+}
+
 .breadcrumb-item {
   font-weight: 300;
   font-size: 14px;

@@ -766,6 +766,11 @@ $text-color: #222222;
   display: flex;
   width: 209px;
   list-style-type: none;
+  & li+li::before {
+    padding: 2px;
+    color: #636363;
+   content: "/\00a0";
+  }
   &-item {
   font-weight: 300;
   font-size: 14px;
@@ -780,6 +785,7 @@ $text-color: #222222;
     margin-right: 2px;
   }
 }
+
 
 .filter-navi {
   display: flex;
