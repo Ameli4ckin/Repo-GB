@@ -987,9 +987,8 @@
   display: -ms-flexbox;
   display: flex;
   width: 1140px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1050,6 +1049,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 360px;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
 }
 
 .filter-list-item {
@@ -1198,6 +1201,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #fff;
+  position: absolute;
+  z-index: 1;
 }
 
 .list-size-item {
@@ -1344,6 +1349,12 @@
   line-height: 29px;
   color: #EF5B70;
   margin-bottom: 65px;
+}
+
+.list-size-product {
+  width: 160px;
+  margin-left: 50px;
+  margin-top: 65px;
 }
 
 .products-item-button {

@@ -790,7 +790,7 @@ $text-color: #222222;
 .filter-navi {
   display: flex;
   width: $width-site;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-top: 51px;
 }
@@ -838,6 +838,10 @@ $text-color: #222222;
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 360px;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
     &-item {
       width: 100%;
       margin: 0 0 18px 0;
@@ -957,6 +961,8 @@ $text-color: #222222;
     padding: 9.5px 9.5px 9.5px 31px;
     box-sizing: border-box;
     background-color: #fff;
+    position: absolute;
+    z-index: 1;
   }
   &-item {
     display: none;
@@ -1071,6 +1077,12 @@ text-transform: uppercase;
  line-height: 29px;
  color: #EF5B70;
  margin-bottom: 65px;
+}
+
+.list-size-product {
+width: 160px;
+margin-left: 50px;
+margin-top: 65px;
 }
 
 .products-item-button {
