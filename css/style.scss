@@ -1079,11 +1079,24 @@ text-transform: uppercase;
  margin-bottom: 65px;
 }
 
+.list-forms {
+  display: flex;
+}
+
+#color {
+  display: none;
+}
+
+#quantity {
+  display: none;
+}
+
 .list-size-product {
 width: 160px;
 margin-left: 50px;
 margin-top: 65px;
 }
+
 
 .products-item-button {
   display: flex;

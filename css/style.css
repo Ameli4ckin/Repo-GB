@@ -1351,6 +1351,20 @@
   margin-bottom: 65px;
 }
 
+.list-forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#color {
+  display: none;
+}
+
+#quantity {
+  display: none;
+}
+
 .list-size-product {
   width: 160px;
   margin-left: 50px;
