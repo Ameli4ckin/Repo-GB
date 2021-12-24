@@ -752,14 +752,14 @@ $text-color: #222222;
   }
 }
 
-.breadcrumb {
+.bcrumb {
   display: flex;
   width: 209px;
   list-style-type: none;
   & li+li::before {
     padding: 2px;
     color: #636363;
-   content: "/\00a0";
+    content: "/\00a0";
   }
   &-item {
   font-weight: 300;
@@ -1082,9 +1082,17 @@ text-transform: uppercase;
 }
 
 .list-size-product {
-width: 160px;
-margin-left: 50px;
+width: 175px;
+
 margin-top: 65px;
+  &-color {
+    width: 210px;
+    margin-left: 30px;
+  }
+  &-quantity {
+    width: 160px;
+  }
+
 }
 
 
@@ -1111,32 +1119,13 @@ margin-top: 65px;
   }
 }
 
+.subscribe-products {
+  margin-top: 128px;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
 
 
 
