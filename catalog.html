@@ -121,9 +121,15 @@
             </ul>
         </header>
 
-        <nav class="catalog-nav">
+        <nav class="catalog-nav ">
             <a href="#" class="navi-link">new arrivals</a>
-            <a href="#" class="navi-link-bmenu">home/men/new arrivals</a>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">home /</a></li>
+                    <li class="breadcrumb-item"><a href="#">men /</a></li>
+                    <li class="breadcrumb-item-active">new arrivals</li>
+                </ol>
+            </nav>
         </nav>
 
 
@@ -186,6 +192,8 @@
                 </ul>
             </div>
 
+
+
             <form class="list-size">
                 <input type="checkbox" id="switch">
                 <label class="list-size-btn-title" for="switch">
@@ -218,18 +226,6 @@
 
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
         <section class="products">
             <ul class="products-list">
@@ -418,6 +414,28 @@
             </ul>
         </section>
 
+        <nav class="pagination">
+            <ul class="pagination-navi">
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">
+                        <span>&laquo;</span>
+                    </a>
+                </li>
+                <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
+                <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+                <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+                <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+                <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+                <li class="pagination-item"><a class="pagination-link" href="#">6.....</a></li>
+                <li class="pagination-item"><a class="pagination-link" href="#">20</a></li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">
+                        <span>&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div class="features">
             <div class="features-container">
                 <div class="features-item">
@@ -469,7 +487,6 @@
                 </form>
             </div>
         </section>
-
 
         <footer class="page-footer">
             <p class="page-footer-txt">&copy; 2021 Brand All Rights Reserved.</p>
