@@ -1461,8 +1461,8 @@
   display: flex;
   width: 652px;
   border: 1px solid #EAEAEA;
-  -webkit-box-shadow: 17px -19px 24px rgba(0, 0, 0, 0.13);
-  box-shadow: 17px -19px 24px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 17px 20px 24px rgba(0, 0, 0, 0.13);
+  box-shadow: 17px 20px 24px rgba(0, 0, 0, 0.13);
 }
 
 .main-cart .cart-item-buttom {
