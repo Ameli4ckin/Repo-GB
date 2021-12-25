@@ -983,12 +983,11 @@
   display: -ms-flexbox;
   display: flex;
   width: 1140px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 51px;
+  width: 100%;
 }
 
 #switch-filter {
@@ -1004,6 +1003,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #FFFFFF;
+  margin-left: 150px;
 }
 
 .filter-btn {
@@ -1049,6 +1049,8 @@
   position: absolute;
   z-index: 1;
   background-color: #fff;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .filter-list-item {
@@ -1134,10 +1136,18 @@
   display: none;
 }
 
+#switch1 {
+  display: none;
+}
+
 #switch:checked ~ .list-size-wrp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.list-trending {
+  width: 200px;
 }
 
 .list-size {
