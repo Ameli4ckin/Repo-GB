@@ -1159,7 +1159,9 @@ margin-top: 65px;
       display: flex;
       width: 652px;
       border: 1px solid #EAEAEA;
-      box-shadow: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+      -webkit-box-shadow: 17px -19px 24px  rgba(0, 0, 0, 0.13);
+      -moz-box-shadow: 17px -19px 24px  rgba(0, 0, 0, 0.13);
+      box-shadow: 17px -19px 24px rgba(0, 0, 0, 0.13);
     }
   
     &-buttom {
@@ -1189,6 +1191,7 @@ margin-top: 65px;
         height: 24px;
         margin-left: 25px;
         border: 1px solid #EAEAEA;
+
       }
     }
   }
@@ -1272,8 +1275,6 @@ margin-top: 65px;
     margin: 21px 0 17px 43px;
   }
 }
-
-
 
 .shipping {
   width: $width-site;
