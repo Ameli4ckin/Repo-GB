@@ -978,6 +978,15 @@
   margin-right: 2px;
 }
 
+.filter-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .filter-navi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -987,7 +996,6 @@
       -ms-flex-align: center;
           align-items: center;
   padding-top: 51px;
-  width: 100%;
 }
 
 #switch-filter {
@@ -999,11 +1007,9 @@
 }
 
 .filter {
-  width: 360px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  width: 90px;
   background: #FFFFFF;
-  margin-left: 150px;
+  margin-right: 304px;
 }
 
 .filter-btn {
@@ -1147,7 +1153,47 @@
 }
 
 .list-trending {
-  width: 200px;
+  margin-right: 38px;
+}
+
+.list-trending-btn-title {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #6F6E6E;
+  background-color: transparent;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.list-trending-btn-title svg {
+  fill: #6F6E6E;
+  position: absolute;
+  top: 40%;
+  left: 105%;
+}
+
+.list-trending-btn-title:hover {
+  color: #F16D7F;
+}
+
+.list-trending-btn-title:hover svg {
+  fill: currentColor;
+}
+
+.list-trending-btn-title:active {
+  color: black;
+}
+
+.list-trending-btn-title:active svg {
+  fill: currentColor;
 }
 
 .list-size {
@@ -1177,7 +1223,7 @@
   fill: #6F6E6E;
   position: absolute;
   top: 40%;
-  left: 60%;
+  left: 45%;
 }
 
 .list-size-btn-title:hover {
@@ -1246,6 +1292,50 @@
   position: absolute;
   top: 1px;
   left: -23.5px;
+}
+
+.list-prise {
+  margin-right: 38px;
+}
+
+.list-prise-btn-title {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #6F6E6E;
+  background-color: transparent;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.list-prise-btn-title svg {
+  fill: #6F6E6E;
+  position: absolute;
+  top: 40%;
+  left: 110%;
+}
+
+.list-prise-btn-title:hover {
+  color: #F16D7F;
+}
+
+.list-prise-btn-title:hover svg {
+  fill: currentColor;
+}
+
+.list-prise-btn-title:active {
+  color: black;
+}
+
+.list-prise-btn-title:active svg {
+  fill: currentColor;
 }
 
 .pagination {

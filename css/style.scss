@@ -681,7 +681,6 @@ $text-color: #222222;
   }
 }
 
-
 .page-footer {
   display: flex;
   justify-content: space-between;
@@ -776,13 +775,15 @@ $text-color: #222222;
   }
 }
 
-
+.filter-wrp {
+  display: flex;
+  justify-content: center;
+}
 .filter-navi {
   display: flex;
   width: $width-site;
   align-items: center;
   padding-top: 51px;
-  width: 100%;
 }
 
 #switch-filter {
@@ -794,10 +795,9 @@ $text-color: #222222;
 }
 
 .filter {
-  width: 360px;
-  box-sizing: border-box;
+  width: 90px;
   background: #FFFFFF;
-  margin-left: 150px;
+  margin-right: 304px;
   &-btn {
     display: block;
     width: 100%;
@@ -915,7 +915,41 @@ $text-color: #222222;
 }
 
 .list-trending {
-  width: 200px;
+  margin-right: 38px;
+  &-btn-title {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #6F6E6E;
+    background-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    & svg {
+      fill: #6F6E6E;
+      position: absolute;
+      top: 40%;
+      left: 105%;
+    }
+    &:hover {
+      color: #F16D7F;
+    }
+    &:hover svg {
+      fill: currentColor;
+    }
+    &:active {
+      color: black;
+    }
+    &:active svg {
+      fill: currentColor;
+    }
+  }
 }
 
 .list-size {
@@ -941,7 +975,7 @@ $text-color: #222222;
       fill: #6F6E6E;
       position: absolute;
       top: 40%;
-      left: 60%;
+      left: 45%;
     }
     &:hover {
       color: #F16D7F;
@@ -1001,6 +1035,44 @@ $text-color: #222222;
   } 
 }
 
+.list-prise {
+  margin-right: 38px;
+  &-btn-title {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #6F6E6E;
+    background-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    & svg {
+      fill: #6F6E6E;
+      position: absolute;
+      top: 40%;
+      left: 110%;
+    }
+    &:hover {
+      color: #F16D7F;
+    }
+    &:hover svg {
+      fill: currentColor;
+    }
+    &:active {
+      color: black;
+    }
+    &:active svg {
+      fill: currentColor;
+    }
+  }
+}
+
 .pagination {
 display: flex;
 justify-content: center;
@@ -1020,6 +1092,8 @@ justify-content: center;
     margin-right: 17px;
   }
 }
+
+// ===============================products====================================================
 
 .slider {
   height: 777px;
