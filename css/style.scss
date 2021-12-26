@@ -4,13 +4,8 @@ $site-color: #F1E4E6;
 $text-color: #222222;
 
 * {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -1277,7 +1272,6 @@ margin-top: 65px;
         height: 24px;
         margin-left: 25px;
         border: 1px solid #EAEAEA;
-
       }
     }
   }
@@ -1303,6 +1297,9 @@ margin-top: 65px;
       &:nth-child(3) {
         margin: 20px 0 20px 0;
       }
+      &::placeholder {
+        text-indent: 17px;
+      }  
     }
   }
   &-button {
@@ -1382,10 +1379,93 @@ margin-top: 65px;
   }
 }
 
+// ==============================registration==================================================
 
+.registration-forms-wrp {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 64px;
+  .registration-forms {
+    display: flex;
+    flex-direction: column;
+    &-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    }
+    &-input {
+      width: 360px;
+      height: 45px;
+      margin-top: 20px;
+      border: 1px solid #a4a4a4;
+      &::placeholder {
+        text-indent: 17px;
+      }  
+    }
 
+    &-radio {
+      display: flex;
+      margin: 31px 0 33px 0;
+      &-text {
+        font-size: 11px;
+        line-height: 13px;
+        margin-left: 10px;
+      }
+      & input:nth-child(3) {
+        margin-left: 20px;
+      }
+    }
+    &-info {
+      width: 359px;
+      margin: 15px 0 39px 0;
+      font-size: 13px;
+      line-height: 16px;
+      color: #b1b1b1;
+    }
+    &-button {
+      width: 167px;
+      height: 50px;
+      background-color: #f16d7f;
+      border: none;
+      &-text {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+      }
+    }
+  }
+}
 
+.registration-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 128px;
+  & p {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+  &-top {
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  &-text {
+    width: 652px;
+    margin-bottom: 21px;
+  }
+  & p:nth-child(4) {
+    margin: 16px 0 16px 0;
+  }
+  & p:nth-child(6) {
+    margin: 16px 0 16px 0;
+  }
+}
 
+.subscribe-registration {
+  margin-top: 96px;
+}
 
 
 

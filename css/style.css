@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .header {
   width: 100%;
   display: -webkit-box;
@@ -1631,6 +1626,22 @@
   margin: 20px 0 20px 0;
 }
 
+.cart-forms-shipping-input::-webkit-input-placeholder {
+  text-indent: 17px;
+}
+
+.cart-forms-shipping-input:-ms-input-placeholder {
+  text-indent: 17px;
+}
+
+.cart-forms-shipping-input::-ms-input-placeholder {
+  text-indent: 17px;
+}
+
+.cart-forms-shipping-input::placeholder {
+  text-indent: 17px;
+}
+
 .cart-forms-button {
   display: block;
   width: 100px;
@@ -1711,5 +1722,133 @@
   line-height: 17px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.registration-forms-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 64px;
+}
+
+.registration-forms-wrp .registration-forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration-forms-wrp .registration-forms-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration-forms-wrp .registration-forms-input {
+  width: 360px;
+  height: 45px;
+  margin-top: 20px;
+  border: 1px solid #a4a4a4;
+}
+
+.registration-forms-wrp .registration-forms-input::-webkit-input-placeholder {
+  text-indent: 17px;
+}
+
+.registration-forms-wrp .registration-forms-input:-ms-input-placeholder {
+  text-indent: 17px;
+}
+
+.registration-forms-wrp .registration-forms-input::-ms-input-placeholder {
+  text-indent: 17px;
+}
+
+.registration-forms-wrp .registration-forms-input::placeholder {
+  text-indent: 17px;
+}
+
+.registration-forms-wrp .registration-forms-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 31px 0 33px 0;
+}
+
+.registration-forms-wrp .registration-forms-radio-text {
+  font-size: 11px;
+  line-height: 13px;
+  margin-left: 10px;
+}
+
+.registration-forms-wrp .registration-forms-radio input:nth-child(3) {
+  margin-left: 20px;
+}
+
+.registration-forms-wrp .registration-forms-info {
+  width: 359px;
+  margin: 15px 0 39px 0;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+
+.registration-forms-wrp .registration-forms-button {
+  width: 167px;
+  height: 50px;
+  background-color: #f16d7f;
+  border: none;
+}
+
+.registration-forms-wrp .registration-forms-button-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.registration-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 128px;
+}
+
+.registration-info p {
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration-info-top {
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.registration-info-text {
+  width: 652px;
+  margin-bottom: 21px;
+}
+
+.registration-info p:nth-child(4) {
+  margin: 16px 0 16px 0;
+}
+
+.registration-info p:nth-child(6) {
+  margin: 16px 0 16px 0;
+}
+
+.subscribe-registration {
+  margin-top: 96px;
 }
 /*# sourceMappingURL=style.css.map */
