@@ -133,21 +133,24 @@
                     </p>
                     <p class="cart-item-mtxt">Color: Red</p>
                     <p class="cart-item-mtxt">Size: XL</p>
-                    <p class="cart-item-mtxt">Quantity: <span><input class="cart-item-mtxt-input" type="text"></span>
+                    <p class="cart-item-mtxt">Quantity: <span><input class="cart-item-mtxt-input" type="number"
+                                min="0"></span>
                     </p>
                 </div>
             </div>
         </article>
 
         <div class="cart-forms">
-            <div class="cart-forms-shipping">
-                <p class="cart-forms-shipping-text">shipping adress</p>
-                <input class="cart-forms-shipping-input" type="text" placeholder="Bangladesh">
-                <input class="cart-forms-shipping-input" type="text" placeholder="State">
-                <input class="cart-forms-shipping-input" type="text" placeholder="Postcode / Zip">
-                <button class="cart-forms-button">
-                    <span class="cart-forms-button-txt">get a quote</span>
-                </button>
+            <div class="cart-forms-shopping">
+                <p class="cart-forms-shopping-text">shopping adress</p>
+                <form action="#">
+                    <input class="cart-forms-shopping-input" type="text" placeholder="Bangladesh">
+                    <input class="cart-forms-shopping-input" type="text" placeholder="State">
+                    <input class="cart-forms-shopping-input" type="text" placeholder="Postcode / Zip">
+                    <button type="submit" class="cart-forms-button">
+                        <span class="cart-forms-button-txt">get a quote</span>
+                    </button>
+                </form>
             </div>
         </div>
 
@@ -162,7 +165,8 @@
                     </p>
                     <p class="cart-item-mtxt">Color: Red</p>
                     <p class="cart-item-mtxt">Size: XL</p>
-                    <p class="cart-item-mtxt">Quantity: <span><input class="cart-item-mtxt-input" type="text"></span>
+                    <p class="cart-item-mtxt">Quantity: <span><input class="cart-item-mtxt-input" type="number"
+                                min="0"></span>
                     </p>
                 </div>
             </div>
@@ -179,12 +183,12 @@
         </div>
     </div>
 
-    <div class="shipping">
-        <button class="shipping-button">
-            <span class="shipping-button-txt">proceed to checkout</span>
+    <div class="shopping">
+        <button class="shopping-button">
+            <span class="shopping-button-txt">clear shopping cart</span>
         </button>
-        <button class="shipping-button">
-            <span class="shipping-button-txt">proceed to checkout</span>
+        <button class="shopping-button">
+            <span class="shopping-button-txt">continue shopping</span>
         </button>
     </div>
 
