@@ -9,9 +9,9 @@ $text-color: #222222;
   font-family: Lato;
 }
 
-// *, ::after, ::before {
-//   box-sizing: content-box;
-// }
+*, ::after, ::before {
+  box-sizing: content-box;
+}
 
 .header {
   width: 100%;
@@ -731,8 +731,7 @@ $text-color: #222222;
 
 // ================================catalog===============================================
 
-
-.catalog-nav {
+.catalog-nav-wrp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -740,14 +739,16 @@ $text-color: #222222;
   background-color: $site-color;
   height: 148px;
   text-transform: uppercase;
-
-  .navi-link {
-    width: 194px;
-    font-size: 24px;
-    line-height: 29px;
-    margin-right: 737px;
-    text-decoration: none;
-    color: #F16D7F;
+  .catalog-nav {
+    display: flex;
+    justify-content: space-between;
+    width: $width-site;
+    .navi-link {
+      font-size: 24px;
+      line-height: 29px;
+      text-decoration: none;
+      color: #F16D7F;
+    }
   }
 }
 
@@ -1097,8 +1098,32 @@ justify-content: center;
 
 .slider {
   height: 777px;
-  border-color: #F7F7F7;
+  background-color: #F7F7F7;
+  &__image {
+      margin: 0 auto;
+      width: 597px;
+      height: 724px;
+      margin-top: 11px;
+  }
+  &__link {
+      width: 47px;
+      &:hover {
+          path {
+              fill: #F16D7F;
+          }
+      }
+  }
+  &__btn {
+      width: 47px;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(42, 42, 42, 0.15);
+  }
 }
+
+
 
 .women-collection-wrp {
   display: flex;
@@ -1112,7 +1137,11 @@ justify-content: center;
     width: 1140px;
     height: 600px;
     border: 1px solid #EAEAEA;
+    background-color: #fff;
     padding-top: 64px;
+    position: relative;
+    z-index: 1;
+    top: -65px;
     &-txt {
       text-transform: uppercase;
       &-top {
