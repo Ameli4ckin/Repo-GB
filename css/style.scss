@@ -4,13 +4,13 @@ $site-color: #F1E4E6;
 $text-color: #222222;
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
+*, ::after, ::before {
+  box-sizing: content-box;
 }
 
 .header {
@@ -681,7 +681,6 @@ $text-color: #222222;
   }
 }
 
-
 .page-footer {
   display: flex;
   justify-content: space-between;
@@ -732,8 +731,7 @@ $text-color: #222222;
 
 // ================================catalog===============================================
 
-
-.catalog-nav {
+.catalog-nav-wrp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -741,14 +739,16 @@ $text-color: #222222;
   background-color: $site-color;
   height: 148px;
   text-transform: uppercase;
-
-  .navi-link {
-    width: 194px;
-    font-size: 24px;
-    line-height: 29px;
-    margin-right: 737px;
-    text-decoration: none;
-    color: #F16D7F;
+  .catalog-nav {
+    display: flex;
+    justify-content: space-between;
+    width: $width-site;
+    .navi-link {
+      font-size: 24px;
+      line-height: 29px;
+      text-decoration: none;
+      color: #F16D7F;
+    }
   }
 }
 
@@ -765,7 +765,6 @@ $text-color: #222222;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  color: #636363;
     &-active {
       color: #F16D7F;
     }
@@ -773,14 +772,17 @@ $text-color: #222222;
   & a {
     text-decoration: none;
     margin-right: 2px;
+    color: #636363;
   }
 }
 
-
+.filter-wrp {
+  display: flex;
+  justify-content: center;
+}
 .filter-navi {
   display: flex;
   width: $width-site;
-  justify-content: space-around;
   align-items: center;
   padding-top: 51px;
 }
@@ -788,14 +790,15 @@ $text-color: #222222;
 #switch-filter {
   display: none;
 }
+
 #switch-filter:checked ~ .filter-list {
   display: block;
 }
 
 .filter {
-  width: 360px;
-  box-sizing: border-box;
+  width: 90px;
   background: #FFFFFF;
+  margin-right: 304px;
   &-btn {
     display: block;
     width: 100%;
@@ -832,6 +835,9 @@ $text-color: #222222;
     position: absolute;
     z-index: 1;
     background-color: #fff;
+    -webkit-box-shadow: 6px 4px 35px rgba(0,0,0,0.21);
+    -moz-box-shadow: 6px 4px 35px rgba(0,0,0,0.21);
+    box-shadow: 6px 4px 35px rgba(0,0,0,0.21);
     &-item {
       width: 100%;
       margin: 0 0 18px 0;
@@ -902,8 +908,49 @@ $text-color: #222222;
 #switch {
   display: none;
 }
+#switch1 {
+  display: none;
+}
 #switch:checked ~ .list-size-wrp {
   display: flex;
+}
+
+.list-trending {
+  margin-right: 38px;
+  &-btn-title {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #6F6E6E;
+    background-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    & svg {
+      fill: #6F6E6E;
+      position: absolute;
+      top: 40%;
+      left: 105%;
+    }
+    &:hover {
+      color: #F16D7F;
+    }
+    &:hover svg {
+      fill: currentColor;
+    }
+    &:active {
+      color: black;
+    }
+    &:active svg {
+      fill: currentColor;
+    }
+  }
 }
 
 .list-size {
@@ -929,7 +976,7 @@ $text-color: #222222;
       fill: #6F6E6E;
       position: absolute;
       top: 40%;
-      left: 60%;
+      left: 45%;
     }
     &:hover {
       color: #F16D7F;
@@ -989,6 +1036,44 @@ $text-color: #222222;
   } 
 }
 
+.list-prise {
+  margin-right: 38px;
+  &-btn-title {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #6F6E6E;
+    background-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    & svg {
+      fill: #6F6E6E;
+      position: absolute;
+      top: 40%;
+      left: 110%;
+    }
+    &:hover {
+      color: #F16D7F;
+    }
+    &:hover svg {
+      fill: currentColor;
+    }
+    &:active {
+      color: black;
+    }
+    &:active svg {
+      fill: currentColor;
+    }
+  }
+}
+
 .pagination {
 display: flex;
 justify-content: center;
@@ -1009,64 +1094,87 @@ justify-content: center;
   }
 }
 
+// ===============================products====================================================
+
 .slider {
   height: 777px;
-  border-color: #F7F7F7;
+  background-color: #F7F7F7;
+  &__image {
+      margin: 0 auto;
+      width: 597px;
+      height: 724px;
+      margin-top: 11px;
+  }
+  &__link {
+      width: 47px;
+      &:hover {
+          path {
+              fill: #F16D7F;
+          }
+      }
+  }
+  &__btn {
+      width: 47px;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(42, 42, 42, 0.15);
+  }
 }
+
+
 
 .women-collection-wrp {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-}
-
-.women-collection {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  width: 1140px;
-  height: 600px;
-  border: 1px solid #EAEAEA;
-  padding-top: 64px;
-}
-
-.red-line {
-  margin-bottom: 12px;
-}
-
-.women-collection-txt {
-text-transform: uppercase;
-}
-
-.women-collection-txt-top {
-  font-size: 14px;
-  line-height: 17px;
-  color: #F16D7F;
-  margin-bottom: 12px;
-}
-
-.women-collection-txt-tb {
-  font-size: 18px;
-  line-height: 22px;
-  color: #4D4D4D;
-  margin-bottom: 48px;
-}
-.women-collection-text {
-  width: 555px;
-  font-size: 14px;
-  line-height: 17px;
-  color: #5E5E5E;
-  justify-content: center;
-  margin-bottom: 32px;
-}
-
-.women-collection-prise{
-  font-size: 24px;
- line-height: 29px;
- color: #EF5B70;
- margin-bottom: 65px;
+  .women-collection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 1140px;
+    height: 600px;
+    border: 1px solid #EAEAEA;
+    background-color: #fff;
+    padding-top: 64px;
+    position: relative;
+    z-index: 1;
+    top: -65px;
+    &-txt {
+      text-transform: uppercase;
+      &-top {
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        margin-bottom: 12px;
+      }
+      &-tb {
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-bottom: 48px;
+      }
+    }
+    &-redline {
+      margin-bottom: 12px;
+    }
+    &-text {
+      width: 555px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5E5E5E;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    &-prise{
+      font-size: 24px;
+      line-height: 29px;
+      color: #EF5B70;
+      margin-bottom: 65px;
+    }
+  }
 }
 
 .list-forms {
@@ -1082,15 +1190,28 @@ text-transform: uppercase;
 }
 
 .list-size-product {
-width: 175px;
-
-margin-top: 65px;
+  width: 175px;
+  margin-top: 65px;
+  & svg {
+    top: 40%;
+    left: 55%;
+  }
   &-color {
     width: 210px;
     margin-left: 30px;
+    & svg {
+      top: 40%;
+      left: 55%;
+    }
   }
   &-quantity {
     width: 160px;
+    & svg {
+      fill: #6F6E6E;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+    }
   }
 
 }
@@ -1124,12 +1245,280 @@ margin-top: 65px;
 }
 
 
+// ==========================cart==========================================================
 
+.nav-cart-wrp {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: $site-color;
+  height: 148px;
+  text-transform: uppercase;
+  .nav-cart {
+    display: flex;
+    align-items: center;
+    width: $width-site;
+  }
+  .nav-link-cart {
+    width: 194px;
+    font-size: 24px;
+    line-height: 29px;
 
+    text-decoration: none;
+    color: #F16D7F;
+  }
+}
 
+.main-cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 96px;
+  .cart-item {
+    width: 652px;
+    &-info {
+      display: flex;
+      width: 652px;
+      border: 1px solid #EAEAEA;
+      -webkit-box-shadow: 17px 20px 24px  rgba(0, 0, 0, 0.13);
+      -moz-box-shadow: 17px 20px 24px  rgba(0, 0, 0, 0.13);
+      box-shadow: 17px 20px 24px rgba(0, 0, 0, 0.13);
+    }
+  
+    &-buttom {
+      padding-top: 40px;
+    }
+  
+    &-txt {
+      margin-left: 31px;
+      font-size: 24px;
+      line-height: 29px;
+      color: #222222;
+      text-transform: uppercase;
+      &-top {
+      margin-top: 22px;
+      }
+    }
+    &-mtxt {
+      margin-left: 31px;
+      font-size: 22px;
+      line-height: 26px;
+      color: #575757;
+      &-prise {
+        color: #ef5b70;
+      }
+      &-input {
+        width: 43px;
+        height: 24px;
+        margin-left: 25px;
+        border: 1px solid #EAEAEA;
+        text-align: center;
+      }
+    }
+  }
+}
 
+.cart-forms {
+  margin-left: 129px;
+  padding-bottom: 40px;
+  &-shopping {
+    display: flex;
+    flex-direction: column;
+    & form {
+      display: flex;
+      flex-direction: column;
+    }
+    &-text {
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    &-input {
+      width: 343px;
+      height: 45px;
+      padding-left: 17px;
+      &:nth-child(2) {
+        margin: 20px 0 20px 0;
+      }
+      // &::placeholder {
+      //   text-indent: 17px;
+      // }  
+    }
+  }
+  &-button {
+    display: block;
+    width: 100px;
+    height: 34px;
+    margin-top: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #A4A4A4;
+    &-txt {
+      font-size: 11px;
+      line-height: 13px;
+      color: #4a4a4a;
+      text-transform: uppercase;
+    }
+  }
 
+}
 
+.checkout {
+  width: 360px;
+  height: 214px;
+  background-color: #f5f3f3;
+  margin-left: 129px;
+  text-align: right;
+  &-sub {
+    margin: 39px 34px 12px 0px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    & span {
+      margin-left: 23px;
+    }
+  }
+  &-grand {
+    margin: 0 34px 0 0;
+    text-transform: uppercase;
+    & span {
+      margin-left: 23px;
+      color: #f16d7f;
+      font-weight: 700;
+    }
+  }
+  &-button {
+    width: 273px;
+    height: 50px;
+    margin: 0 43px 0 0;
+    background-color: #f16d7f;
+    border: none;
+    text-transform: uppercase;
+    &-txt {
+      font-size: 16px;
+      line-height: 19px;
+      color: #fff;
+    }
+  }
+  &-line {
+    width: 275px;
+    color: #e2e2e2;
+    margin: 21px 0 17px 43px;
+  }
+}
+
+.shopping {
+  width: $width-site;
+  margin: 0 auto;
+  &-button {
+    width: 235px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #a4a4a4;
+    margin: 73px 180px 0 0;
+
+    &-txt {
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// ==============================registration==================================================
+
+.registration-forms-wrp {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 64px;
+  .registration-forms {
+    display: flex;
+    flex-direction: column;
+    & form {
+    display: flex;
+    flex-direction: column;
+    }
+    &-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    }
+    &-input {
+      width: 343px;
+      height: 45px;
+      margin-top: 20px;
+      border: 1px solid #a4a4a4;
+      padding-left: 17px;
+      // &::placeholder {
+      //   text-indent: 17px;
+      // }  
+    }
+    &-radio {
+      display: flex;
+      margin: 31px 0 33px 0;
+      &-text {
+        font-size: 11px;
+        line-height: 13px;
+        margin-left: 10px;
+      }
+      & input:nth-child(3) {
+        margin-left: 20px;
+      }
+    }
+    &-info {
+      width: 359px;
+      margin: 15px 0 39px 0;
+      font-size: 13px;
+      line-height: 16px;
+      color: #b1b1b1;
+    }
+    &-button {
+      width: 167px;
+      height: 50px;
+      background-color: #f16d7f;
+      border: none;
+      &-text {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.registration-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 128px;
+  & p {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+  &-top {
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  &-text {
+    width: 652px;
+    margin-bottom: 21px;
+  }
+  & p:nth-child(4) {
+    margin: 16px 0 16px 0;
+  }
+  & p:nth-child(6) {
+    margin: 16px 0 16px 0;
+  }
+}
+
+.subscribe-registration {
+  margin-top: 96px;
+}
 
 
 
