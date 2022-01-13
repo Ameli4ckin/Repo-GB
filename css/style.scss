@@ -1499,8 +1499,6 @@ $text-color: #222222;
 }
 
 
-
-
 @media (max-width: 768px) {
   .header-menu {
     padding: 0 32px;
@@ -1659,6 +1657,12 @@ $text-color: #222222;
   .registration-info-text {
     width: 354px;
   }
+}
+@media (max-width: 375px) {
+
+
+
+
 }
 
 
