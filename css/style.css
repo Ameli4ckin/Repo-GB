@@ -2032,7 +2032,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-position: 30% 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background-position: 20% 0;
+    height: 693px;
+  }
+  .subscribe-info-avatar {
+    margin: 53px;
   }
   .subscribe-info {
     margin: 0 auto;
@@ -2042,6 +2049,12 @@
   }
   .page-footer {
     padding: 0 32px;
+  }
+  .catalog-nav-wrp .catalog-nav {
+    padding: 0 16px;
+  }
+  .hidden-item {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

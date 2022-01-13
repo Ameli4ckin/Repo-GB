@@ -1575,7 +1575,12 @@ $text-color: #222222;
   }
   .subscribe {
     flex-direction: column;
-    background-position: 30% 0;
+    justify-content: flex-start;
+    background-position: 20% 0;
+    height: 693px;
+  }
+  .subscribe-info-avatar {
+    margin: 53px;
   }
   .subscribe-info {
     margin: 0 auto;
@@ -1586,7 +1591,19 @@ $text-color: #222222;
   .page-footer {  
     padding: 0 32px;
   }
+
+  // ===============================products==================================
+
+  .catalog-nav-wrp .catalog-nav {
+    padding: 0 16px;
+  }
+  .hidden-item {
+    display: none;
+  }
+
+
 }
+
 
 
 
