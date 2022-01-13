@@ -2056,5 +2056,13 @@
   .hidden-item {
     display: none;
   }
+  .filter-navi {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .filter-btn {
+    margin-left: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

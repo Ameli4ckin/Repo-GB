@@ -1601,7 +1601,14 @@ $text-color: #222222;
     display: none;
   }
 
+  // ===============================catalog====================================
 
+  .filter-navi {
+    justify-content: space-between;
+  }
+  .filter-btn {
+    margin-left: 16px;
+  }
 }
 
 
