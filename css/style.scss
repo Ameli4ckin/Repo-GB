@@ -22,7 +22,6 @@ $text-color: #222222;
   height: 75px;
   align-items: center;
   justify-content: space-between;
-
   box-sizing: border-box;
 }
 .header-menu-left {
@@ -254,6 +253,17 @@ $text-color: #222222;
       top: -7px;
       right: -9px;
     }
+  }
+}
+.header-btn-hidden {
+  display: flex;
+}
+.hidden-menu {
+  display: flex;
+  justify-content: center;
+  display: none;
+  .hidden-btn {
+    fill: #222222;
   }
 }
 .brand-wrp {
@@ -1659,9 +1669,73 @@ $text-color: #222222;
   }
 }
 @media (max-width: 375px) {
+  .header-btn-hidden {
+    display: none;
+  }
+  .hidden-menu {
+    display: flex;
+  }
+  .brand_img {
+    display: none;
+  }
+  .brand{
+    width: 375px;
+    height: 363px;
+    margin: 0;
+  }
+  .brand-wrp .brand_title_wrp {
+    align-items: center;
+    width: 236px;
+    margin-left: 83px;
+  }
 
-
-
+  .brand-wrp .brand_title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .brand-wrp .brand_subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .categories {
+    padding-top: 64px;
+    justify-content: center;
+  }
+  .categories-item {
+    width: 343px;
+    height: 247px;
+    margin: 0 0 32px 0;
+  }
+  .categories .categories-item:last-child {
+    max-width: 343px;
+    height: 111px;
+    margin-top: 32px;
+  }
+  .products {
+    justify-content: center;
+    padding-top: 64px;
+  }
+  .products-item {
+    width: 359px;
+  }
+  .subscribe-info-txt {
+    width: 343;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .subscribe-form-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .subscribe-form {
+    width: 341px;
+  }
+  .page-footer {
+    flex-direction: column-reverse;
+  }
+  .page-footer-socials {
+    margin: 43px 40px;
+  }
 
 }
 

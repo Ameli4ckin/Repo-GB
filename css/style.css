@@ -328,6 +328,26 @@
   right: -9px;
 }
 
+.header-btn-hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hidden-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.hidden-menu .hidden-btn {
+  fill: #222222;
+}
+
 .brand-wrp {
   width: 100%;
   background-color: #F1E4E6;
@@ -2125,6 +2145,86 @@
   }
   .registration-info-text {
     width: 354px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-btn-hidden {
+    display: none;
+  }
+  .hidden-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .brand_img {
+    display: none;
+  }
+  .brand {
+    width: 375px;
+    height: 363px;
+    margin: 0;
+  }
+  .brand-wrp .brand_title_wrp {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 236px;
+    margin-left: 83px;
+  }
+  .brand-wrp .brand_title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .brand-wrp .brand_subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .categories {
+    padding-top: 64px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .categories-item {
+    width: 343px;
+    height: 247px;
+    margin: 0 0 32px 0;
+  }
+  .categories .categories-item:last-child {
+    max-width: 343px;
+    height: 111px;
+    margin-top: 32px;
+  }
+  .products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 64px;
+  }
+  .products-item {
+    width: 359px;
+  }
+  .subscribe-info-txt {
+    width: 343;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .subscribe-form-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .subscribe-form {
+    width: 341px;
+  }
+  .page-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .page-footer-socials {
+    margin: 43px 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
