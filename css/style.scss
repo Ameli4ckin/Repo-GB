@@ -1470,6 +1470,9 @@ $text-color: #222222;
       height: 50px;
       background-color: #f16d7f;
       border: none;
+      & img {
+        margin-left: 20px;
+      }
       &-text {
         text-transform: uppercase;
         font-size: 14px;
@@ -1507,6 +1510,7 @@ $text-color: #222222;
   margin-top: 96px;
 }
 
+// ==================================================================================
 
 @media (max-width: 768px) {
   .header-menu {
@@ -1667,6 +1671,7 @@ $text-color: #222222;
     width: 354px;
   }
 }
+
 @media (max-width: 375px) {
   .header-menu {
     padding: 0 16px;
@@ -1935,9 +1940,6 @@ $text-color: #222222;
   .products {
     padding-top: 0;
   }
-
-
-
 }
 
 
