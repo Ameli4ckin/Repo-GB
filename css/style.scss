@@ -1688,7 +1688,6 @@ $text-color: #222222;
     width: 236px;
     margin-left: 83px;
   }
-
   .brand-wrp .brand_title {
     font-size: 38px;
     line-height: 45px;
@@ -1696,6 +1695,11 @@ $text-color: #222222;
   .brand-wrp .brand_subtitle {
     font-size: 20px;
     line-height: 24px;
+  }
+  .brand-wrp .brand_title_wrp::before {
+    width: 12px;
+    height: 61px;
+    margin-top: 7px;
   }
   .categories {
     padding-top: 64px;
@@ -1736,6 +1740,52 @@ $text-color: #222222;
   .page-footer-socials {
     margin: 43px 40px;
   }
+
+  // ==============================catalog====================================
+
+  .catalog-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .catalog-nav-wrp .catalog-nav h4 { 
+    margin-bottom: 32px;
+  }
+  .filter-navi {
+    width: 100%;
+    padding-top: 24px;
+
+  }
+  .filter {
+    margin: 0;
+  }
+  .filter span {
+    display: none;
+  }
+  .filter-btn {
+    margin: 0;
+    width: 37px;
+    height: 25px;
+  }
+  .filter-btn svg {
+    width: 37px;
+    height: 25px;
+    margin-left: 8px;
+  }
+  .list-trending {
+    margin-right: 12px;
+
+  }
+  .list-size {
+    margin-left: 16px;
+  }
+  .list-prise {
+    margin: 0 24px 0 0;
+  }
+  .products-catalog {
+    padding-top: 32px;
+  }
+
+
 
 }
 
