@@ -2377,5 +2377,54 @@
   .registration-info-top {
     margin-top: 40px;
   }
+  .item__slider {
+    width: 375px;
+    height: 624px;
+  }
+  .slider__image {
+    width: 374px;
+    height: 454px;
+  }
+  .women-collection-wrp .women-collection {
+    width: 375px;
+    height: 600px;
+  }
+  .women-collection-wrp .women-collection-txt-tb {
+    margin-bottom: 32px;
+  }
+  .women-collection-wrp .women-collection-text {
+    width: 326px;
+    line-height: 20px;
+  }
+  .women-collection-wrp .women-collection-prise {
+    margin-bottom: 32px;
+  }
+  .women-collection-wrp hr:nth-child(6) {
+    width: 175px;
+  }
+  .list-forms {
+    width: 350px;
+  }
+  .list-size-product {
+    margin-top: 49px;
+  }
+  .list-size-product svg {
+    top: 40%;
+    left: 95%;
+  }
+  .list-size-product-color svg {
+    top: 40%;
+    left: 95%;
+  }
+  .list-size-product-quantity svg {
+    top: 40%;
+    left: 82%;
+  }
+  .products-item-button {
+    margin-top: 64px;
+  }
+  .products {
+    padding-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
