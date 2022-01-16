@@ -1863,7 +1863,20 @@ $text-color: #222222;
     margin-top: 96px;
   }
 
+  // =========================registration==================================
 
+  .registration-forms-wrp {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .registration-forms-wrp .registration-forms-input {
+    width: 342px;
+    height: 45px;
+  }
+  .registration-info-top {
+    margin-top: 40px;
+  }
 
 
 
