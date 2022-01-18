@@ -1470,8 +1470,9 @@ $text-color: #222222;
       height: 50px;
       background-color: #f16d7f;
       border: none;
-      & img {
+      & svg {
         margin-left: 20px;
+        fill: #ffffff;
       }
       &-text {
         text-transform: uppercase;
@@ -1783,7 +1784,6 @@ $text-color: #222222;
   }
   .list-trending {
     margin-right: 12px;
-
   }
   .list-size {
     margin-left: 16px;

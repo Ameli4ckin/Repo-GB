@@ -1933,8 +1933,9 @@
   border: none;
 }
 
-.registration-forms-wrp .registration-forms-button img {
+.registration-forms-wrp .registration-forms-button svg {
   margin-left: 20px;
+  fill: #ffffff;
 }
 
 .registration-forms-wrp .registration-forms-button-text {
