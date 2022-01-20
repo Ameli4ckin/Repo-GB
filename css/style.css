@@ -2232,6 +2232,7 @@
   }
   .products-item {
     width: 359px;
+    margin: 0 8px 0 8px;
   }
   .subscribe-info-txt {
     width: 343;
@@ -2365,6 +2366,8 @@
     padding: 0;
     width: 360px;
     height: 45px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .main-cart-forms .cart-forms-button-txt {
     text-transform: inherit;
@@ -2405,6 +2408,8 @@
   .women-collection-wrp .women-collection {
     width: 375px;
     height: 600px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .women-collection-wrp .women-collection-txt-tb {
     margin-bottom: 32px;

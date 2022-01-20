@@ -1743,6 +1743,7 @@ $text-color: #222222;
   }
   .products-item {
     width: 359px;
+    margin: 0 8px 0 8px;
   }
   .subscribe-info-txt {
     width: 343;
@@ -1868,6 +1869,7 @@ $text-color: #222222;
     padding: 0;
     width: 360px;
     height: 45px;
+    box-sizing: border-box;
   }
   .main-cart-forms .cart-forms-button-txt {
     text-transform: inherit;
@@ -1910,6 +1912,7 @@ $text-color: #222222;
   .women-collection-wrp .women-collection {
     width: 375px;
     height: 600px;
+    box-sizing: border-box;
   }
   .women-collection-wrp .women-collection-txt-tb {
     margin-bottom: 32px;
