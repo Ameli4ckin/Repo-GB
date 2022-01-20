@@ -1387,6 +1387,10 @@
   fill: currentColor;
 }
 
+.products-catalog {
+  padding-top: 64px;
+}
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2040,6 +2044,9 @@
   .products {
     width: 100%;
   }
+  .products-catalog {
+    padding-top: 40px;
+  }
   .products-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2289,7 +2296,7 @@
   .list-prise {
     margin: 0 24px 0 0;
   }
-  .products-catalog {
+  .products-item {
     padding-top: 32px;
   }
   .nav-cart-wrp .nav-cart {

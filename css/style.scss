@@ -1074,6 +1074,9 @@ $text-color: #222222;
     }
   }
 }
+.products-catalog {
+  padding-top: 64px;
+}
 .pagination {
   display: flex;
   justify-content: center;
@@ -1565,6 +1568,9 @@ $text-color: #222222;
   .products {
     width: 100%;
   }
+  .products-catalog {
+    padding-top: 40px;
+  }
   .products-list {
     justify-content: center;
   }
@@ -1797,7 +1803,7 @@ $text-color: #222222;
   .list-prise {
     margin: 0 24px 0 0;
   }
-  .products-catalog {
+  .products-item {
     padding-top: 32px;
   }
 
