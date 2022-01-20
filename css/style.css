@@ -2175,6 +2175,7 @@
     width: 375px;
     height: 363px;
     margin: 0;
+    padding: 0;
   }
   .brand-wrp .brand_title_wrp {
     -webkit-box-align: center;
@@ -2218,6 +2219,10 @@
             justify-content: center;
     padding-top: 64px;
   }
+  .subscribe {
+    width: 375px;
+    padding: 0;
+  }
   .products-item {
     width: 359px;
   }
@@ -2232,6 +2237,7 @@
   }
   .subscribe-form {
     width: 341px;
+    margin-right: 0;
   }
   .page-footer {
     -webkit-box-orient: vertical;
@@ -2367,17 +2373,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-top: 40px;
   }
   .registration-forms-wrp .registration-forms-input {
     width: 342px;
     height: 45px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .registration-info {
-    margin: 0 0 0 8px;
+    margin: 0 8px;
   }
   .registration-info-top {
     margin-top: 40px;
