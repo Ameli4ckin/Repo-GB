@@ -1086,7 +1086,7 @@ $text-color: #222222;
     height: 44px;
     justify-content: center;
     align-items: center;
-    border: 1px solid #EBEBEB;
+    border: 1px solid #ebebeb;
     list-style-type: none;
   }
   &-link {
@@ -1094,6 +1094,15 @@ $text-color: #222222;
   }
   &-item {
     margin-right: 17px;
+    &:nth-child(7) {
+      margin-right: 0;
+    }
+    & a {
+      color: #ebebeb;
+    }
+    & a:hover {
+      color: #f16d7f;
+    }
   }
 }
 
@@ -1516,7 +1525,7 @@ $text-color: #222222;
 
 // ==================================================================================
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header-menu {
     padding: 0 32px;
   }
@@ -1678,8 +1687,169 @@ $text-color: #222222;
     width: 354px;
   }
 }
+@media (max-width: 735px) {
+  .header-menu {
+    padding: 0 32px;
+  }
+  .brand {
+    padding: 0 33px 0 0;
+    box-sizing: border-box;
+  }
+  .brand-wrp {
+    justify-content: space-between;
+  }
+  .brand-wrp .brand {
+    width: 100%;
+  }
+  .brand-wrp .brand_title_wrp {
+    width: 311px;
+    width: 100%; 
+    margin: 138px 0 0 7%;
+  }
+  .brand-wrp .brand img {
+    width: 386px;
+    height: 368px;
+    margin: 0;
+  }
+  .brand-wrp .brand_title {
+    font-size: 44px;
+    line-height: 52px;
+  }
+  .brand-wrp .brand_subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .categories {
+    margin: 0;
+    padding: 19px 0 0 0;
+    box-sizing: border-box;
+  }
+  .categories-item {
+    width: 232px;
+    min-height: 167px;
+    margin: 0 19px 0 0;
+  }
+  .categories .categories-item:nth-child(4n-1), .categories .categories-item:last-child {
+    margin: 0;
+  }
+  .categories .categories-item:last-child {
+    max-width: 735px;
+    margin: 19px auto 0 auto;
+  }
+  .products {
+    width: 100%;
+  }
+  .products-catalog {
+    padding-top: 40px;
+  }
+  .products-list {
+    justify-content: center;
+  }
+  .products-item {
+    margin: 0 10px 0 10px;
+  }
+  .products-item-txt-wrp {
+    margin-bottom: 17px;
+  }
+  .features {
+    height: 610px;
+  }
+  .features-container {
+    flex-direction: column;
+  }
+  .features-item:nth-child(1) {
+    margin-top: 48px;
+  }
+  .features-item-txt {
+    width: 360px;
+    margin-bottom: 48px;
+  }
+  .subscribe {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-position: 20% 0;
+    height: 693px;
+  }
+  .subscribe-info-avatar {
+    margin: 53px;
+  }
+  .subscribe-info {
+    margin: 0 auto;
+  }
+  .subscribe-info-txt {
+    margin-bottom: 48px;
+  }
+  .page-footer {  
+    padding: 0 32px;
+  }
 
-@media (max-width: 375px) {
+  // ===============================products==================================
+
+  .catalog-nav {
+    padding: 0 16px;
+  }
+  .hidden-item {
+    display: none;
+  }
+
+  // ===============================catalog====================================
+
+  .filter-navi {
+    justify-content: space-between;
+  }
+  .filter-btn {
+    margin-left: 16px;
+  }
+
+  // =================================cart======================================
+  .nav-link-cart {
+    margin-left: 16px;
+  }
+  .main-cart-wrp {
+    flex-direction: column;
+    margin-left: 16px;
+  }
+  .main-cart-wrp .main-cart .cart-item-info {
+    width: 734px;
+  }
+  .shopping {
+    margin-left: 130px;
+  }
+  .shopping-button {
+    margin: 72px 48px 0 0;
+  }
+  .main-cart-forms {
+    padding-top: 64px;
+  }
+  .main-cart-forms .cart-forms {
+    margin: 0;
+  }
+  .main-cart-forms {
+    flex-direction: row;
+  }
+  .checkout {
+    margin: 38px 0 0 15px;
+  }
+
+
+  // ===============================registration================================
+
+  .registration-forms {
+
+    margin-left: 16px;
+  }
+  .registration-info {
+    margin: 0 16px 0 23px;
+    & p {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  .registration-info-text {
+    width: 354px;
+  }
+}
+@media (max-width: 425px) {
   .header-menu {
     padding: 0 16px;
   }
@@ -1735,15 +1905,17 @@ $text-color: #222222;
   }
   .products {
     justify-content: center;
-    padding-top: 64px;
   }
-  .subscribe {
-    width: 375px;
-    padding: 0;
+  .products-title {
+    padding-top: 64px;
   }
   .products-item {
     width: 359px;
     margin: 0 8px 0 8px;
+  }
+  .subscribe {
+    width: 375px;
+    padding: 0;
   }
   .subscribe-info-txt {
     width: 343;
@@ -1776,8 +1948,7 @@ $text-color: #222222;
   }
   .filter-navi {
     width: 100%;
-    padding-top: 24px;
-
+    padding: 24px 0 32px 0;
   }
   .filter {
     margin: 0;
@@ -1803,9 +1974,6 @@ $text-color: #222222;
   }
   .list-prise {
     margin: 0 24px 0 0;
-  }
-  .products-item {
-    padding-top: 32px;
   }
 
   // ================================cart===================================
