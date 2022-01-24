@@ -1074,6 +1074,9 @@ $text-color: #222222;
     }
   }
 }
+.products-catalog {
+  padding-top: 64px;
+}
 .pagination {
   display: flex;
   justify-content: center;
@@ -1083,7 +1086,7 @@ $text-color: #222222;
     height: 44px;
     justify-content: center;
     align-items: center;
-    border: 1px solid #EBEBEB;
+    border: 1px solid #ebebeb;
     list-style-type: none;
   }
   &-link {
@@ -1091,6 +1094,15 @@ $text-color: #222222;
   }
   &-item {
     margin-right: 17px;
+    &:nth-child(7) {
+      margin-right: 0;
+    }
+    & a {
+      color: #ebebeb;
+    }
+    & a:hover {
+      color: #f16d7f;
+    }
   }
 }
 
@@ -1470,8 +1482,9 @@ $text-color: #222222;
       height: 50px;
       background-color: #f16d7f;
       border: none;
-      & img {
+      & svg {
         margin-left: 20px;
+        fill: #ffffff;
       }
       &-text {
         text-transform: uppercase;
@@ -1512,7 +1525,7 @@ $text-color: #222222;
 
 // ==================================================================================
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header-menu {
     padding: 0 32px;
   }
@@ -1563,6 +1576,9 @@ $text-color: #222222;
   }
   .products {
     width: 100%;
+  }
+  .products-catalog {
+    padding-top: 40px;
   }
   .products-list {
     justify-content: center;
@@ -1671,8 +1687,7 @@ $text-color: #222222;
     width: 354px;
   }
 }
-
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .header-menu {
     padding: 0 16px;
   }
@@ -1692,6 +1707,7 @@ $text-color: #222222;
     width: 375px;
     height: 363px;
     margin: 0;
+    padding: 0;
   }
   .brand-wrp .brand_title_wrp {
     align-items: center;
@@ -1727,10 +1743,17 @@ $text-color: #222222;
   }
   .products {
     justify-content: center;
+  }
+  .products-title {
     padding-top: 64px;
   }
   .products-item {
     width: 359px;
+    margin: 0 8px 0 8px;
+  }
+  .subscribe {
+    width: 375px;
+    padding: 0;
   }
   .subscribe-info-txt {
     width: 343;
@@ -1743,6 +1766,7 @@ $text-color: #222222;
   }
   .subscribe-form {
     width: 341px;
+    margin-right: 0;
   }
   .page-footer {
     flex-direction: column-reverse;
@@ -1762,8 +1786,7 @@ $text-color: #222222;
   }
   .filter-navi {
     width: 100%;
-    padding-top: 24px;
-
+    padding: 24px 0 32px 0;
   }
   .filter {
     margin: 0;
@@ -1783,16 +1806,12 @@ $text-color: #222222;
   }
   .list-trending {
     margin-right: 12px;
-
   }
   .list-size {
     margin-left: 16px;
   }
   .list-prise {
     margin: 0 24px 0 0;
-  }
-  .products-catalog {
-    padding-top: 32px;
   }
 
   // ================================cart===================================
@@ -1856,6 +1875,7 @@ $text-color: #222222;
     padding: 0;
     width: 360px;
     height: 45px;
+    box-sizing: border-box;
   }
   .main-cart-forms .cart-forms-button-txt {
     text-transform: inherit;
@@ -1871,15 +1891,15 @@ $text-color: #222222;
 
   .registration-forms-wrp {
     flex-direction: column;
-    align-items: center;
     margin-top: 40px;
   }
   .registration-forms-wrp .registration-forms-input {
     width: 342px;
     height: 45px;
+    box-sizing: border-box;
   }
   .registration-info {
-    margin: 0 0 0 8px;
+    margin: 0 8px;
   }
   .registration-info-top {
     margin-top: 40px;
@@ -1898,6 +1918,7 @@ $text-color: #222222;
   .women-collection-wrp .women-collection {
     width: 375px;
     height: 600px;
+    box-sizing: border-box;
   }
   .women-collection-wrp .women-collection-txt-tb {
     margin-bottom: 32px;
